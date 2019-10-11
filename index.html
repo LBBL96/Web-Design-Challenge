@@ -4,128 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Landing Page
-    </title>
-
+    <title>Landing Page</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Latitude</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarColor02">
-                <ul class="navbar-nav mr-auto">
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item active">
+                        <a class="nav-link" href="Comparison.html">Comparison <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                        <a class="nav-link" href="data-page.html">Data <span class="sr-only">(current)</span></a>
+                </li>
+            
+            <!-- Dropdown Menu -->
+            
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="MaxTemp.html">Max Temperature</a>
+                        <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
+                    </div>    
+                </li>
                     
-                    <li class="nav-item active">
-                            <a class="nav-link" href="Comparison.html">Comparison <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                            <a class="nav-link" href="data-page.html">Data <span class="sr-only">(current)</span></a>
-                    </li>
-                
-                <!-- Dropdown Menu -->
-                
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Plots
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="images/MaxTemp.html">Max Temperature</a>
-                            <a class="dropdown-item" href="Humidity.html">Humidity</a>
-                            <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
-                        </li>
-                    </div>
-                </ul>
+            </ul>
     </nav>
-    <div class="row mt-4 ml-5">
-    <h1 class="col-sm-8 col-md-4"><b>Visualizations</b></h1>
+
+    <!-- Main  -->
+    <div class="container">
+
+    <!-- Left side -->
+    <div class="row align-items-end">
+        <div class="col-md-3 col-sm-6">
+            <h1 class="text-center"><b>Summary: Latitude vs. x</b></h1>
+
+        </div>
+
+        <!-- Keeping row without text -->
+        <div class="col-md-3 col-sm-6">
+            
+            
+        </div>
     </div>
 
-    <div class="container-fluid">
+    <!-- Left image -->
 
-        <!-- First row -->
-               
-            <div class="row mt-4 ml-5">
+    <div class="row align-items-center no-gutters">
+            <div class="col-md-6 col-sm-12">
+                <figure class="figure">
+                    <img src="WebVisualizations/images/Fig1.png" class="figure-img img-fluid rounded" alt="...">
+                </figure>
+    
+            </div>
 
-                <!-- First card -->
-            
-                    <div class="col-sm-10 col-md-5">
-                        
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        <h4 class="text-center">vs. Max Temperature</h4></h4>
-                                            <a href="MaxTemp.html" class="href">
-                                                <img src="images/Fig1.png" class="card-img-top" alt="vs max temperature">
-                                            </a>
-                                    
-                               </div>
-                            </div>  
-                    </div>
-                
-  
-                <!-- Second card -->
-            
-                    <div class="col-sm-10 col-md-5">
-                       
-                            <div class="card">
-                                <div class="card-body">
-                                        <h4 class="card-title">
-                                            <h4 class="text-center">vs. Humidity</h4></h4>
-                                                <a href="Humidity.html">
-                                                    <img src="WebVisualizations/Resources/assets/images/Fig2.png" class="card-img-top" alt="vs max temperature">
-                                                </a>
-                               </div>
-                            </div>  
-                    </div>
-                </div>
-
-                <!-- Second row -->
-
-                <div class="row mt-4 ml-5">
-                    
-                    <!-- First card -->
-            
-                        <div class="col-sm-10 col-md-5">
+            <!-- Left, top row of group -->
+            <div class="col-md-3 col-sm-6">       
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <h4 class="text-center">vs. Max Temperature</h4></h4>
+                                    <a href="MaxTemp.html" class="href">
+                                        <img src="WebVisualizations/images/Fig1.png" class="card-img-top" alt="vs max temperature">
+                                    </a>
                             
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title">
-                                            <h4 class="text-center">vs. Cloudiness</h4></h4>
-                                                <a href="Cloudiness.html" class="href">
-                                                    <img src="WebVisualizations/Resources/assets/images/Fig3.png" class="card-img-top" alt="vs max temperature">
-                                                </a>
-                                        
-                                   </div>
-                                </div>  
-                        </div>
-                    
-      
-                    <!-- Second card -->
-                
-                        <div class="col-sm-10 col-md-5">
-                           
-                                <div class="card">
-                                    <div class="card-body">
-                                            <h4 class="card-title">
-                                                <h4 class="text-center">vs. Wind Speed</h4></h4>
-                                                    <a href="WindSpeed.html">
-                                                        <img src="WebVisualizations/Resources/assets/images/Fig4.png" class="card-img-top" alt="vs max temperature">
-                                                    </a>
-                                   </div>
-                                </div>  
-                        </div>
-                    </div>
+                       </div>
+                    </div>  
+            </div>
+            <!-- Right, top row of group -->
 
+            <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <h4 class="text-center">vs. Humidity</h4></h4>
+                                    <a href="Humidity.html" class="href">
+                                        <img src="WebVisualizations/images/Fig2.png" class="card-img-top" alt="vs max temperature">
+                                    </a>
+                            
+                       </div>
+                    </div>  
+            </div>
+            </div>
+  
+    
+    <div class="row align-items-start no-gutters">
+            <div class="col-md-6 col-sm-12">
                     
-</div>
+                <!-- Keeping left side separated from right -->
+                The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this
+                analysis, we pulled data from Open Weather Map to assemble a dataset of more than 500 cities. <br><br>
+                We then used Matplotlib to plot various aspects of weather vs. latitude. We looked at potential relationships to 
+                temperature, cloudiness, humidity, and wind speed. This site provides the source data as well as visualizations created 
+                as part of the analysis. Click on an image to your right to learn more.
+            </div>
 
-    <!-- Optional JavaScript -->
+            <!-- Left, bottom row of group -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <h4 class="text-center">vs. Cloudiness</h4></h4>
+                                <a href="Cloudiness.html" class="href">
+                                    <img src="WebVisualizations/images/Fig3.png" class="card-img-top" alt="vs max temperature">
+                                </a>
+                        
+                   </div>
+                </div>  
+        
+    
+            </div>
+
+            <!-- Right, bottom row of group -->
+            <div class="col-md-3 col-sm-6">
+               
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <h4 class="text-center">vs. Wind Speed</h4></h4>
+                            <a href="WindSpeed.html" class="href">
+                                <img src="WebVisualizations/images/Fig4.png" class="card-img-top" alt="vs max temperature">
+                            </a>
+                    
+               </div>
+            </div>  
+    </div>
+        </div>
+    </div>
+
+<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
